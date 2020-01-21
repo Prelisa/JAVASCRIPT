@@ -1,0 +1,72 @@
+New keyword is used in any programming langugage which is used to call constructor
+
+ JS is loosely typed programming langugage
+
+
+Non Primitive datatype
+ Non-primitive datatype stores the heterogenous data.
+ Array and object are non primitive datatype
+ Array is stored using [] notation
+ object is the collection of key and value pair
+Example:
+var b= new Array() // This is called the constructor syntax
+New is used to create the new instance and calls constructor
+
+With array comes index, we need to work with value, starts with 0
+
+Object (collection of key value pair)
+
+var ram= {
+    name: 'ram',
+    address: 'tinkune',
+    phone: 22333,
+    presentStatus: false,
+    class: 3
+}
+ram.class=4; // replacing class value
+we can also add new value with this Example is given below
+ram.house='red' // this new property will be added
+
+
+
+1. Dot notation >> ram.class=4; 
+if there is no value or the property of the object because it is undefined.
+example: ram.helicopter (this is undefined)
+because ram exist which has the memory but no value so undefined
+
+2. Bracket Notation >> 
+example: ram['phone']
+the value can be accessed with the string notation inside the Bracket
+if we do lets say ram[phone] this will get a reference error
+
+reference error is a error generated when we try to use non allocated memory.
+memory nai allocate vako chaina but you are trying to use it this is called as reference error
+YOu should understand that is never initialized if there is reference error
+
+
+taking one example:
+
+var ram= {
+    name: 'ram',
+    address: 'tinkune',
+    phone: 22333,
+    presentStatus: false,
+    class: 3
+} 
+if we don't give string notation then reference error occurs.
+
+But if we do this like
+
+var phone='name';
+console.log('ram>>'+ram[phone]);
+
+this phone takes the reference of ram.name and shows the value of ram,name as it is referred by the word phone
+so the output is ram.
+
+
+Bracket notation is recommended while working with references.
+
+
+
+
+
