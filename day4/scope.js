@@ -58,14 +58,14 @@
 // 5.own scope
 
 
-var text='welcome';
+var text = 'welcome';
 
-function sayHello(name){
-    var to='to';
+function sayHello(name) {
+    var to = 'to';
 
-    function lab(labNo){
-        var msg=`hy ${name} ${text} ${to} ${labNo}. `
-        console.log('msg>>',msg);
+    function lab(labNo) {
+        var msg = `hy ${name} ${text} ${to} ${labNo}. `
+        console.log('msg>>', msg);
     }
     lab('lab12')
 }
